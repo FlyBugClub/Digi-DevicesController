@@ -25,22 +25,6 @@ btn.style.fontSize = "20px";
 btn.style.color="black"
 btn.style.textDecoration="none"
 
-
-//===================== button info history =====================
-var btn_view = document.createElement('button');
-btn_view.type = 'button';
-btn_view.className ="fa-sharp fa-solid fa-eye";
-
-//========= btn style =========
-btn_view.style.backgroundColor="transparent"
-btn_view.style.border = "none";
-btn_view.style.fontSize = "20px";
-btn_view.style.color="black"
-btn_view.style.textDecoration="none"
-btn_view.style.marginLeft="30px"
-
-
-
 async function check()
 {		                        
     email = sessionStorage.getItem('email');
@@ -376,13 +360,12 @@ function AddFunction()
     //         alert(this.id);
     //     };
     // }
-    alert(the);
     for ( var i = 1; i <= count_button_id_onclick; i++ ) (function(i){ 
         document.getElementById(i).onclick = function() {
             localStorage.setItem("key",the[this.id]);
-            alert(the[this.id]);
-        }
-      })(i);
+            alert()
+        } 
+        })(i);
     // var buttons = document.getElementById("1");
     // for (var i = 0; i <= count_button_id_onclick; i += 1) {
     // buttons[i].onclick = function(e) {

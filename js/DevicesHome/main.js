@@ -25,22 +25,6 @@ btn.style.fontSize = "20px";
 btn.style.color="black"
 btn.style.textDecoration="none"
 
-
-//===================== button info history =====================
-var btn_view = document.createElement('button');
-btn_view.type = 'button';
-btn_view.className ="fa-sharp fa-solid fa-eye";
-
-//========= btn style =========
-btn_view.style.backgroundColor="transparent"
-btn_view.style.border = "none";
-btn_view.style.fontSize = "20px";
-btn_view.style.color="black"
-btn_view.style.textDecoration="none"
-btn_view.style.marginLeft="30px"
-
-
-
 async function check()
 {		                        
     email = sessionStorage.getItem('email');

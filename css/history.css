@@ -48,10 +48,40 @@
 /* ----------------- DEVICE INFORMATION ---------------- */
 /* ----------------------------------------------------- */
 
+.dataDivices-section .function {
+  background-color: rgba(230, 230, 230);
+  border-radius: 23px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: right;
+}
+
+.dataDivices-section .function .report {
+  justify-content: center;
+  padding: 6px;
+  margin-right: 20px;
+}
+
+.dataDivices-section .function .report button {
+  border: none;
+  background-color: rgb(243, 243, 243);
+  border-radius: 20px;
+  padding: 2px 12px;
+}
+
+.dataDivices-section .function .report button:hover {
+  color: #ed2024;
+  transform: scale(1.05);
+}
+
+/* ----------------------------------------------------- */
+/* ----------------- DEVICE INFORMATION ---------------- */
+/* ----------------------------------------------------- */
+
 .dataDivices-section .container .detail-info {
   background-color: rgb(243, 243, 243);
   padding: 20px;
-  margin: 0px 5px 5px 5px;
+  margin: 0px 5px 0 5px;
   border-radius: 20px;
   border: none;
   box-shadow: 5px 10px 10px rgb(165, 165, 165);
@@ -173,7 +203,7 @@ td {
 .dataDivices-section .container .detail-parameter {
   background-color: rgb(243, 243, 243);
   padding: 20px;
-  margin: 5px;
+  margin:  0 5px 0 5px;
   border-radius: 20px;
   border: none;
   box-shadow: 5px 10px 10px rgb(165, 165, 165);
@@ -219,55 +249,57 @@ td {
 }
 
 .container-circle-graph .highcharts-pie-series .highcharts-point {
-    stroke: #ede;
-    stroke-width: 2px;
+  stroke: #ede;
+  stroke-width: 2px;
 }
 
-.container-circle-graph .highcharts-pie-series .highcharts-data-label-connector {
-    stroke: silver;
-    stroke-dasharray: 2, 2;
-    stroke-width: 2px;
+.container-circle-graph
+  .highcharts-pie-series
+  .highcharts-data-label-connector {
+  stroke: silver;
+  stroke-dasharray: 2, 2;
+  stroke-width: 2px;
 }
 
 .container-circle-graph .highcharts-figure,
 .container-circle-graph .highcharts-data-table table {
-    min-width: 320px;
-    max-width: 600px;
-    margin: 1em auto;
+  min-width: 320px;
+  max-width: 600px;
+  margin: 1em auto;
 }
 
 .container-circle-graph .highcharts-data-table table {
-    font-family: Verdana, sans-serif;
-    border-collapse: collapse;
-    border: 1px solid #ebebeb;
-    margin: 10px auto;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
 }
 
 .container-circle-graph .highcharts-data-table caption {
-    padding: 1em 0;
-    font-size: 1.2em;
-    color: #555;
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
 }
 
 .container-circle-graph .highcharts-data-table th {
-    font-weight: 600;
-    padding: 0.5em;
+  font-weight: 600;
+  padding: 0.5em;
 }
 
 .container-circle-graph .highcharts-data-table td,
 .container-circle-graph .highcharts-data-table th,
 .container-circle-graph .highcharts-data-table caption {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 .container-circle-graph .highcharts-data-table thead tr,
 .container-circle-graph .highcharts-data-table tr:nth-child(even) {
-    background: #f8f8f8;
+  background: #f8f8f8;
 }
 
 .container-circle-graph .highcharts-data-table tr:hover {
-    background: #f1f7ff;
+  background: #f1f7ff;
 }

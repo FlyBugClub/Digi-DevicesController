@@ -29,7 +29,7 @@ btn.style.textDecoration="none"
 //===================== button info history =====================
 var btn_view = document.createElement('button');
 btn_view.type = 'button';
-btn_view.className ="a-solid fa-magnifying-glass";
+btn_view.className ="fa-sharp fa-solid fa-eye";
 
 //========= btn style =========
 btn_view.style.backgroundColor="transparent"
@@ -37,6 +37,8 @@ btn_view.style.border = "none";
 btn_view.style.fontSize = "20px";
 btn_view.style.color="black"
 btn_view.style.textDecoration="none"
+btn_view.style.marginLeft="30px"
+
 
 
 async function check()
@@ -280,10 +282,6 @@ function MakeTable()
                 var textNode = document.createTextNode(btn);
                 tagColumn.appendChild(textNode);
                 tagColumn.innerHTML = btn.outerHTML;
-
-                // var textNode_view = document.createTextNode(btn_view);
-                // tagColumn.appendChild(textNode_view);
-                // tagColumn.innerHTML = btn_view.outerHTML;
 
                 tagRow.appendChild(tagColumn);
                 count = count + 1 ;

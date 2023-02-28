@@ -49,8 +49,8 @@
 /* ----------------------------------------------------- */
 
 .dataDivices-section .function {
-  background-color: rgba(230, 230, 230);
-  border-radius: 23px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 20px;
   margin-bottom: 12px;
   display: flex;
   justify-content: right;
@@ -58,15 +58,16 @@
 
 .dataDivices-section .function .report {
   justify-content: center;
-  padding: 6px;
+  padding: 12px;
   margin-right: 20px;
 }
 
 .dataDivices-section .function .report button {
   border: none;
-  background-color: rgb(243, 243, 243);
+  background-color: rgba(230, 230, 230);
+  font-size: 20px;
   border-radius: 20px;
-  padding: 2px 12px;
+  padding: 5px 12px;
 }
 
 .dataDivices-section .function .report button:hover {
@@ -147,7 +148,7 @@ td {
   border-top-right-radius: 20px;
   text-align: center;
   margin: 20px 0 0 0;
-  padding: 5px;
+  padding: 5px 20px;
   font-style: italic;
   color: #c45166;
 }

@@ -381,8 +381,8 @@ function AddFunction()
     alert(the);
     for ( var i = 1; i <= count_button_id_onclick; i++ ) (function(i){ 
         document.getElementById(i).onclick = function() {
-            localStorage.setItem("key",the[this.id]);
-            alert(the[this.id]);
+            localStorage.setItem("key",the[this.id-1]);
+            alert(the[this.id-1]);
         }
       })(i);
     // var buttons = document.getElementById("1");

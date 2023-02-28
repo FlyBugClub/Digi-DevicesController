@@ -12,17 +12,31 @@ var bar = ["ID","Device","Location","Group Devices","Date","Time","Parameter","D
 
 var the = [];
 
-
+//===================== button info history =====================
 var btn = document.createElement('button');
 btn.type = 'button';
 // btn.href = '../../html/history.html'
 btn.className ="fa-solid fa-circle-info";
 
 //========= btn style =========
+btn.style.backgroundColor="transparent"
 btn.style.border = "none";
 btn.style.fontSize = "20px";
 btn.style.color="black"
 btn.style.textDecoration="none"
+
+
+//===================== button info history =====================
+var btn_view = document.createElement('button');
+btn_view.type = 'button';
+btn_view.className ="a-solid fa-magnifying-glass";
+
+//========= btn style =========
+btn_view.style.backgroundColor="transparent"
+btn_view.style.border = "none";
+btn_view.style.fontSize = "20px";
+btn_view.style.color="black"
+btn_view.style.textDecoration="none"
 
 
 async function check()
@@ -262,9 +276,15 @@ function MakeTable()
                 tagColumn.style.fontSize = "16px";
                 tagColumn.style.backgroundColor = 'lightgray';
                 btn.id= count_button_id;
+
                 var textNode = document.createTextNode(btn);
                 tagColumn.appendChild(textNode);
                 tagColumn.innerHTML = btn.outerHTML;
+
+                // var textNode_view = document.createTextNode(btn_view);
+                // tagColumn.appendChild(textNode_view);
+                // tagColumn.innerHTML = btn_view.outerHTML;
+
                 tagRow.appendChild(tagColumn);
                 count = count + 1 ;
                 count_bold = count_bold + 1;

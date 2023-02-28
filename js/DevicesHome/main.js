@@ -382,6 +382,7 @@ function AddFunction()
     for ( var i = 1; i <= count_button_id_onclick; i++ ) (function(i){ 
         document.getElementById(i).onclick = function() {
             localStorage.setItem("key",the[this.id]);
+            alert(the[this.id]);
         }
       })(i);
     // var buttons = document.getElementById("1");

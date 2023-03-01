@@ -7,7 +7,7 @@ var count = 0;
 var count_button = 0;
 var test ;
 var count_button_id_onclick = 0;
-var bar = ["ID","Device","Location","Group Devices","Date","Time","Parameter","Details"];
+var bar = ["ID","Device","Location","Date","Time","Parameter","Details"];
 
 
 var the = [];

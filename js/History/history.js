@@ -1,10 +1,8 @@
 const URL = "https://digi27.azurewebsites.net/api/healthies";
 
-
 var ChiaKhoa;
-ChiaKhoa = localStorage.getItem("key");
-
-function getDetails() {
+function check() {
+    ChiaKhoa = localStorage.getItem("key");
     alert("ok");
     alert(ChiaKhoa);
     axios.get(URL + "/SearchByPIDParameterHistory/" + ChiaKhoa).then((response) => {

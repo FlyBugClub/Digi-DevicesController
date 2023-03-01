@@ -28,7 +28,7 @@ btn.style.textDecoration="none"
 async function check()
 {		                        
     email = sessionStorage.getItem('email');
-    await axios.get(URL + "/SearchByEmail/tr6r20@gmail,com").then((response) =>{
+    await axios.get(URL + "/SearchByEmail/"+email).then((response) =>{
         var healthies = response.data;
 
         for(var human of healthies )
@@ -363,7 +363,10 @@ function AddFunction()
     for ( var i = 1; i <= count_button_id_onclick; i++ ) (function(i){ 
         document.getElementById(i).onclick = function() {
             localStorage.setItem("key",the[this.id-1]);
-            window.location="/html/history.html";
+            setTimeout(() => {
+                window.location="/html/history.html";
+              }, 1000);
+            
         }
       })(i);
     // var buttons = document.getElementById("1");

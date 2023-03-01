@@ -15,8 +15,9 @@ var the = [];
 //===================== button info history =====================
 var btn = document.createElement('button');
 btn.type = 'button';
-// btn.href = '../../html/history.html'
-btn.className ="fa-solid fa-circle-info";
+
+
+var btn_show = document.createElement('show');
 
 //========= btn style =========
 btn.style.backgroundColor="transparent"
@@ -261,11 +262,11 @@ function MakeTable()
                 tagColumn.style.height = "3px";
                 tagColumn.style.fontSize = "16px";
                 tagColumn.style.backgroundColor = 'lightgray';
-                btn.id= count_button_id;
 
-                var textNode = document.createTextNode(btn);
+                var textNode = document.createTextNode(btn + btn_show);
                 tagColumn.appendChild(textNode);
                 tagColumn.innerHTML = btn.outerHTML;
+                tagColumn.innerHTML = btn_show.outerHTML;
 
                 tagRow.appendChild(tagColumn);
                 count = count + 1 ;

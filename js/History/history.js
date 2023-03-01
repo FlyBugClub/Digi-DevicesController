@@ -1,0 +1,4 @@
+function pageLoad()
+{
+    alert("ok");
+}

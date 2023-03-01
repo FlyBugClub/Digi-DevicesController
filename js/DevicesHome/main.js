@@ -28,7 +28,7 @@ btn.style.textDecoration="none"
 async function check()
 {		                        
     email = sessionStorage.getItem('email');
-    await axios.get(URL + "/SearchByEmail/"+email).then((response) =>{
+    await axios.get(URL + "/SearchByEmail/tr6r20@gmail,com").then((response) =>{
         var healthies = response.data;
 
         for(var human of healthies )

@@ -364,8 +364,6 @@ function AddFunction()
         document.getElementById(i).onclick = function() {
             localStorage.setItem("key",the[this.id-1]);
             alert(localStorage.getItem('key'));
-            window.location="/html/history.html";
-
         }
       })(i);
     // var buttons = document.getElementById("1");

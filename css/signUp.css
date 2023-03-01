@@ -9,6 +9,17 @@
   background-attachment: fixed;
 }
 
+/* .signUp-title {
+  background-image: linear-gradient(
+      rgba(175, 37, 63, 0.1),
+      rgba(207, 155, 165, 0.85)
+    ),
+    url("../img/bg_tech2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
 .signUp-title h2 {
   /* color: rgb(228, 80, 107); */
   color: rgb(31, 31, 31);
@@ -16,7 +27,7 @@
   font-size: 70px;
   letter-spacing: 5px;
   font-style: italic;
-  margin-top: 20px;
+  margin-top: -20px;
 }
 
 .signUp-title .col {

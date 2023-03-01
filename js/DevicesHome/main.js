@@ -363,10 +363,9 @@ function AddFunction()
     for ( var i = 1; i <= count_button_id_onclick; i++ ) (function(i){ 
         document.getElementById(i).onclick = function() {
             localStorage.setItem("key",the[this.id-1]);
-            setTimeout(() => {
-                window.location="/html/history.html";
-              }, 1000);
-            
+            alert(localStorage.getItem('key'));
+            window.location="/html/history.html";
+
         }
       })(i);
     // var buttons = document.getElementById("1");

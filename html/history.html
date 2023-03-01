@@ -12,8 +12,10 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/history.css" />
-    <script src="../js/DevicesHome/main.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../js/History/history.js"></script>
+    <script src="../js/DevicesHome/main.js"></script>
 
     <!-- Circle data chart -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -86,7 +88,8 @@
       }
     </script>
   </head>
-  <body onload="check()">
+  <body onload="pageLoad()">
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Bubblegum+Sans&display=swap");
     </style>
@@ -133,7 +136,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-            <span style="margin-right: 5px;">nqd230899</span>
+            <span style="margin-right: 5px;">duc</span>
               <img
                 src="../img/user.png"
                 alt="mdo"

@@ -9,7 +9,6 @@ function searchByEmail() {
     replace_email = document.getElementById("txtSignInEmail").value.replace(/\./g,',');
     axios.get(URL + "/SearchByEmail/"+replace_email).then((response) =>{
         var healthies = response.data;
-
         for(var human of healthies )
         {
             if(human.Email === replace_email)
